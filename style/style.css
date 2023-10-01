@@ -42,7 +42,13 @@ header nav>div {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.static-version {
+    background-color: rgba(173, 216, 230, 0.15);
+    border-radius: 5px;
 }
 
 /* common styele or utilities */
@@ -215,7 +221,22 @@ p.course-author {
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
     .logo {
-        margin-left: 20px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(173, 216, 230, 0.096);
+    }
+
+    .logo img {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    .logo p {
+        padding: 2px 5px;
+        margin: 0 5px 5px 5px;
     }
 
     .menu {
@@ -223,12 +244,14 @@ p.course-author {
     }
 
     .menu a {
-        padding: 5px;
+        padding: 3px;
+        margin: 3px;
+        font-size: 14px;
     }
 
 
     .container {
-        width: 95%;
+        width: 85%;
     }
 
     .players,
